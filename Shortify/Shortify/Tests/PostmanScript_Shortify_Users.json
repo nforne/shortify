@@ -1,0 +1,288 @@
+{
+    "info": {
+        "name": "Shortify - Users (mock-ready)",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "variable": [
+        {
+            "key": "mock_base_url",
+            "value": "mock.Shortify.local"
+        },
+        {
+            "key": "api_key",
+            "value": "sk_test_abc123"
+        },
+        {
+            "key": "tenantId",
+            "value": "tenant_abc123"
+        }
+    ],
+    "item": [
+        {
+            "name": "GET All Users",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "x-api-key",
+                        "value": "{{api_key}}"
+                    }
+                ],
+                "url": {
+                    "raw": "http://{{mock_base_url}}/api/users?tenantId={{tenantId}}&page=1&pageSize=50",
+                    "host": [ "{{mock_base_url}}" ],
+                    "path": [ "api", "users" ],
+                    "query": [
+                        {
+                            "key": "tenantId",
+                            "value": "{{tenantId}"
+                        },
+                        {
+                            "key": "page",
+                            "value": "1"
+                        },
+                        {
+                            "key": "pageSize",
+                            "value": "50"
+                        }
+                    ]
+                }
+            },
+            "response": [
+                {
+                    "name": "200 - list 3 users",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "x-api-key",
+                                "value": "sk_test_abc123"
+                            }
+                        ],
+                        "url": { "raw": "http://mock.Shortify.local/api/users?tenantId=tenant_abc123&page=1&pageSize=50" }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "body": "[{\"id\":1,\"email\":\"admin@shortify.local\",\"displayName\":\"Admin\"},{\"id\":2,\"email\":\"alice@shortify.local\",\"displayName\":\"Alice\"},{\"id\":3,\"email\":\"bob@shortify.local\",\"displayName\":\"Bob\"}]"
+                }
+            ]
+        },
+        {
+            "name": "GET User By Id",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "x-api-key",
+                        "value": "{{api_key}}"
+                    }
+                ],
+                "url": {
+                    "raw": "http://{{mock_base_url}}/api/users/1",
+                    "host": [ "{{mock_base_url}}" ],
+                    "path": [ "api", "users", "1" ]
+                }
+            },
+            "response": [
+                {
+                    "name": "200 - user admin",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "x-api-key",
+                                "value": "sk_test_abc123"
+                            }
+                        ],
+                        "url": { "raw": "http://mock.Shortify.local/api/users/1" }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "body": "{\"id\":1,\"tenantId\":\"tenant_abc123\",\"email\":\"admin@shortify.local\",\"displayName\":\"Admin\",\"roles\":[\"account-root\"]}"
+                }
+            ]
+        },
+        {
+            "name": "POST Create User",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "x-api-key",
+                        "value": "{{api_key}}"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{ \"tenantId\":\"tenant_abc123\",\"email\":\"new@shortify.local\",\"displayName\":\"New User\",\"roles\":[\"user\"] }"
+                },
+                "url": {
+                    "raw": "http://{{mock_base_url}}/api/users",
+                    "host": [ "{{mock_base_url}}" ],
+                    "path": [ "api", "users" ]
+                }
+            },
+            "response": [
+                {
+                    "name": "201 - created",
+                    "originalRequest": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "x-api-key",
+                                "value": "sk_test_abc123"
+                            }
+                        ],
+                        "url": { "raw": "http://mock.Shortify.local/api/users" }
+                    },
+                    "status": "Created",
+                    "code": 201,
+                    "body": "{\"id\":4,\"tenantId\":\"tenant_abc123\",\"email\":\"new@shortify.local\",\"displayName\":\"New User\",\"roles\":[\"user\"],\"status\":\"active\"}"
+                }
+            ]
+        },
+        {
+            "name": "PUT Replace User",
+            "request": {
+                "method": "PUT",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "x-api-key",
+                        "value": "{{api_key}}"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{ \"id\":2,\"tenantId\":\"tenant_abc123\",\"email\":\"alice.changed@shortify.local\",\"displayName\":\"Alice Changed\",\"roles\":[\"user\"] }"
+                },
+                "url": {
+                    "raw": "http://{{mock_base_url}}/api/users/2",
+                    "host": [ "{{mock_base_url}}" ],
+                    "path": [ "api", "users", "2" ]
+                }
+            },
+            "response": [
+                {
+                    "name": "200 - replaced",
+                    "originalRequest": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "x-api-key",
+                                "value": "sk_test_abc123"
+                            }
+                        ],
+                        "url": { "raw": "http://mock.Shortify.local/api/users/2" }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "body": "{\"id\":2,\"tenantId\":\"tenant_abc123\",\"email\":\"alice.changed@shortify.local\",\"displayName\":\"Alice Changed\",\"roles\":[\"user\"],\"status\":\"active\"}"
+                }
+            ]
+        },
+        {
+            "name": "PATCH Update User",
+            "request": {
+                "method": "PATCH",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "x-api-key",
+                        "value": "{{api_key}}"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{ \"displayName\":\"Alice P. Updated\" }"
+                },
+                "url": {
+                    "raw": "http://{{mock_base_url}}/api/users/2",
+                    "host": [ "{{mock_base_url}}" ],
+                    "path": [ "api", "users", "2" ]
+                }
+            },
+            "response": [
+                {
+                    "name": "200 - patched",
+                    "originalRequest": {
+                        "method": "PATCH",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "x-api-key",
+                                "value": "sk_test_abc123"
+                            }
+                        ],
+                        "url": { "raw": "http://mock.Shortify.local/api/users/2" }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "body": "{\"id\":2,\"displayName\":\"Alice P. Updated\",\"roles\":[\"user\"],\"status\":\"active\"}"
+                }
+            ]
+        },
+        {
+            "name": "DELETE Remove User (soft)",
+            "request": {
+                "method": "DELETE",
+                "header": [
+                    {
+                        "key": "x-api-key",
+                        "value": "{{api_key}}"
+                    }
+                ],
+                "url": {
+                    "raw": "http://{{mock_base_url}}/api/users/2?soft=true",
+                    "host": [ "{{mock_base_url}}" ],
+                    "path": [ "api", "users", "2" ],
+                    "query": [
+                        {
+                            "key": "soft",
+                            "value": "true"
+                        }
+                    ]
+                }
+            },
+            "response": [
+                {
+                    "name": "200 - soft deleted",
+                    "originalRequest": {
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "x-api-key",
+                                "value": "sk_test_abc123"
+                            }
+                        ],
+                        "url": { "raw": "http://mock.Shortify.local/api/users/2?soft=true" }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "body": "{\"id\":2,\"status\":\"deleted\",\"deletedAt\":\"2025-11-22T07:00:00Z\"}"
+                }
+            ]
+        }
+    ]
+}

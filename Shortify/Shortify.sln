@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36616.10 d17.14
+VisualStudioVersion = 17.14.36616.10
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shortify", "Shortify\Shortify.csproj", "{9926E44F-FB0E-40CB-BCA5-E4EF0BC36E82}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shortify", "Shortify\Shortify.csproj", "{5951AD2D-8A54-4E89-9827-F34E3FC36069}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9926E44F-FB0E-40CB-BCA5-E4EF0BC36E82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9926E44F-FB0E-40CB-BCA5-E4EF0BC36E82}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9926E44F-FB0E-40CB-BCA5-E4EF0BC36E82}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9926E44F-FB0E-40CB-BCA5-E4EF0BC36E82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5951AD2D-8A54-4E89-9827-F34E3FC36069}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5951AD2D-8A54-4E89-9827-F34E3FC36069}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5951AD2D-8A54-4E89-9827-F34E3FC36069}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5951AD2D-8A54-4E89-9827-F34E3FC36069}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
