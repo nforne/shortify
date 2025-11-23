@@ -16,12 +16,20 @@ namespace Shortify.Data
         // other DbSets...
         public DbSet<AttributeEntity> Attributes { get; set; } = null!;
 
+        // add this line
+        public DbSet<MetricEntity> Metrics { get; set; } = null!;
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
             
             modelBuilder.ApplyConfiguration(new UserEntityConfiguration());
             modelBuilder.ApplyConfiguration(new GroupEntityConfiguration());
+
+            // add this
+            modelBuilder.ApplyConfiguration(new MetricEntityConfiguration());
+            modelBuilder.ApplyConfiguration(new AttributeEntityConfiguration());
         }
     }
 }

@@ -1,0 +1,209 @@
+{
+    "info": {
+        "_postman_id": "shortify-metrics-collection",
+        "name": "Shortify Metrics",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Create Metric (CSV default)",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "x-api-key",
+                        "value": "sk_test_abc123"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"tenantId\": \"tenant_abc123\",\n  \"name\": \"metric_campaign_source\",\n  \"from\": \"2023-01-01T00:00:00Z\",\n  \"to\": \"2023-01-31T23:59:59Z\",\n  \"includeRaw\": true\n}"
+                },
+                "url": {
+                    "raw": "http://mock.Shortify.local/api/metrics",
+                    "protocol": "http",
+                    "host": [ "mock", "Shortify", "local" ],
+                    "path": [ "api", "metrics" ]
+                }
+            },
+            "response": [
+                {
+                    "name": "Created",
+                    "originalRequest": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {},
+                        "url": {
+                            "raw": "http://mock.Shortify.local/api/metrics"
+                        }
+                    },
+                    "status": "Created",
+                    "code": 201,
+                    "body": "{\n  \"id\": 1,\n  \"tenantId\": \"tenant_abc123\",\n  \"name\": \"metric_campaign_source\",\n  \"from\": \"2023-01-01T00:00:00Z\",\n  \"to\": \"2023-01-31T23:59:59Z\",\n  \"status\": \"ready\",\n  \"storageUrl\": \"http://mock.Shortify.local/snapshots/tenant_abc123/metric_campaign_source/20230101_20230131.zip\"\n}"
+                }
+            ]
+        },
+        {
+            "name": "Create Metric (JSON-first)",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "x-api-key",
+                        "value": "sk_test_abc123"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"tenantId\": \"tenant_abc123\",\n  \"name\": \"metric_campaign_source_json\",\n  \"from\": \"2023-01-01T00:00:00Z\",\n  \"to\": \"2023-01-31T23:59:59Z\",\n  \"includeRaw\": true\n}"
+                },
+                "url": {
+                    "raw": "http://mock.Shortify.local/api/metrics/json",
+                    "protocol": "http",
+                    "host": [ "mock", "Shortify", "local" ],
+                    "path": [ "api", "metrics", "json" ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get Metric by id",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "x-api-key",
+                        "value": "sk_test_abc123"
+                    }
+                ],
+                "url": {
+                    "raw": "http://mock.Shortify.local/api/metrics/1",
+                    "protocol": "http",
+                    "host": [ "mock", "Shortify", "local" ],
+                    "path": [ "api", "metrics", "1" ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "List Metrics",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "x-api-key",
+                        "value": "sk_test_abc123"
+                    }
+                ],
+                "url": {
+                    "raw": "http://mock.Shortify.local/api/metrics?tenantId=tenant_abc123",
+                    "protocol": "http",
+                    "host": [ "mock", "Shortify", "local" ],
+                    "path": [ "api", "metrics" ],
+                    "query": [
+                        {
+                            "key": "tenantId",
+                            "value": "tenant_abc123"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Download Metric zip",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "x-api-key",
+                        "value": "sk_test_abc123"
+                    }
+                ],
+                "url": {
+                    "raw": "http://mock.Shortify.local/api/metrics/1/download",
+                    "protocol": "http",
+                    "host": [ "mock", "Shortify", "local" ],
+                    "path": [ "api", "metrics", "1", "download" ]
+                }
+            }
+        },
+        {
+            "name": "Replace Metric (PUT)",
+            "request": {
+                "method": "PUT",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "x-api-key",
+                        "value": "sk_test_abc123"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"tenantId\": \"tenant_abc123\",\n  \"name\": \"metric_campaign_source\",\n  \"from\": \"2023-01-01T00:00:00Z\",\n  \"to\": \"2023-01-31T23:59:59Z\",\n  \"includeRaw\": true\n}"
+                },
+                "url": {
+                    "raw": "http://mock.Shortify.local/api/metrics/1",
+                    "protocol": "http",
+                    "host": [ "mock", "Shortify", "local" ],
+                    "path": [ "api", "metrics", "1" ]
+                }
+            }
+        },
+        {
+            "name": "Patch Metric (partial) - regenerate",
+            "request": {
+                "method": "PATCH",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "x-api-key",
+                        "value": "sk_test_abc123"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"regenerate\": true,\n  \"from\": \"2023-01-01T00:00:00Z\",\n  \"to\": \"2023-01-31T23:59:59Z\"\n}"
+                },
+                "url": {
+                    "raw": "http://mock.Shortify.local/api/metrics/1",
+                    "protocol": "http",
+                    "host": [ "mock", "Shortify", "local" ],
+                    "path": [ "api", "metrics", "1" ]
+                }
+            }
+        },
+        {
+            "name": "Delete Metric",
+            "request": {
+                "method": "DELETE",
+                "header": [
+                    {
+                        "key": "x-api-key",
+                        "value": "sk_test_abc123"
+                    }
+                ],
+                "url": {
+                    "raw": "http://mock.Shortify.local/api/metrics/1",
+                    "protocol": "http",
+                    "host": [ "mock", "Shortify", "local" ],
+                    "path": [ "api", "metrics", "1" ]
+                }
+            }
+        }
+    ]
+}

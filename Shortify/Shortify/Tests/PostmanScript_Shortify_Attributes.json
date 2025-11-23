@@ -1,0 +1,220 @@
+﻿{
+    "info": {
+        "_postman_id": "shortify-attributes-collection",
+        "name": "Shortify Attributes",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Create Attribute",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "x-api-key",
+                        "value": "sk_test_abc123"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"tenantId\": \"tenant_abc123\",\n  \"key\": \"campaign_source\",\n  \"valueType\": \"string\",\n  \"visibility\": \"public\",\n  \"optionsJson\": null,\n  \"expiryDate\": null\n}"
+                },
+                "url": {
+                    "raw": "http://mock.Shortify.local/api/attributes",
+                    "protocol": "http",
+                    "host": [ "mock", "Shortify", "local" ],
+                    "path": [ "api", "attributes" ]
+                }
+            },
+            "response": [
+                {
+                    "name": "Created",
+                    "originalRequest": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {},
+                        "url": { "raw": "http://mock.Shortify.local/api/attributes" }
+                    },
+                    "status": "Created",
+                    "code": 201,
+                    "body": "{\n  \"id\": 1,\n  \"tenantId\": \"tenant_abc123\",\n  \"key\": \"campaign_source\",\n  \"valueType\": \"string\",\n  \"visibility\": \"public\",\n  \"optionsJson\": null,\n  \"status\": \"active\",\n  \"createdAt\": \"2025-11-23T12:00:00Z\"\n}"
+                }
+            ]
+        },
+        {
+            "name": "Get Attribute by id",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "x-api-key",
+                        "value": "sk_test_abc123"
+                    }
+                ],
+                "url": {
+                    "raw": "http://mock.Shortify.local/api/attributes/1",
+                    "protocol": "http",
+                    "host": [ "mock", "Shortify", "local" ],
+                    "path": [ "api", "attributes", "1" ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "List Attributes (public only)",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "x-api-key",
+                        "value": "sk_test_abc123"
+                    }
+                ],
+                "url": {
+                    "raw": "http://mock.Shortify.local/api/attributes?tenantId=tenant_abc123",
+                    "protocol": "http",
+                    "host": [ "mock", "Shortify", "local" ],
+                    "path": [ "api", "attributes" ],
+                    "query": [
+                        {
+                            "key": "tenantId",
+                            "value": "tenant_abc123"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "List Attributes (include private)",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "x-api-key",
+                        "value": "sk_test_abc123"
+                    }
+                ],
+                "url": {
+                    "raw": "http://mock.Shortify.local/api/attributes?tenantId=tenant_abc123&includePrivate=true",
+                    "protocol": "http",
+                    "host": [ "mock", "Shortify", "local" ],
+                    "path": [ "api", "attributes" ],
+                    "query": [
+                        {
+                            "key": "tenantId",
+                            "value": "tenant_abc123"
+                        },
+                        {
+                            "key": "includePrivate",
+                            "value": "true"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Replace Attribute (PUT)",
+            "request": {
+                "method": "PUT",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "x-api-key",
+                        "value": "sk_test_abc123"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"key\": \"campaign_source\",\n  \"valueType\": \"string\",\n  \"visibility\": \"public\",\n  \"optionsJson\": null,\n  \"expiryDate\": null\n}"
+                },
+                "url": {
+                    "raw": "http://mock.Shortify.local/api/attributes/1",
+                    "protocol": "http",
+                    "host": [ "mock", "Shortify", "local" ],
+                    "path": [ "api", "attributes", "1" ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Patch Attribute Visibility",
+            "request": {
+                "method": "PATCH",
+                "header": [
+                    {
+                        "key": "x-api-key",
+                        "value": "sk_test_abc123"
+                    }
+                ],
+                "url": {
+                    "raw": "http://mock.Shortify.local/api/attributes/1/visibility?visibility=private",
+                    "protocol": "http",
+                    "host": [ "mock", "Shortify", "local" ],
+                    "path": [ "api", "attributes", "1", "visibility" ],
+                    "query": [
+                        {
+                            "key": "visibility",
+                            "value": "private"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Delete Attribute (soft delete)",
+            "request": {
+                "method": "DELETE",
+                "header": [
+                    {
+                        "key": "x-api-key",
+                        "value": "sk_test_abc123"
+                    }
+                ],
+                "url": {
+                    "raw": "http://mock.Shortify.local/api/attributes/1",
+                    "protocol": "http",
+                    "host": [ "mock", "Shortify", "local" ],
+                    "path": [ "api", "attributes", "1" ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Create Attribute (private example)",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "x-api-key",
+                        "value": "sk_test_abc123"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"tenantId\": \"tenant_abc123\",\n  \"key\": \"internal_flag\",\n  \"valueType\": \"bool\",\n  \"visibility\": \"private\",\n  \"optionsJson\": null\n}"
+                },
+                "url": {
+                    "raw": "http://mock.Shortify.local/api/attributes",
+                    "protocol": "http",
+                    "host": [ "mock", "Shortify", "local" ],
+                    "path": [ "api", "attributes" ]
+                }
+            },
+            "response": []
+        }
+    ]
+}

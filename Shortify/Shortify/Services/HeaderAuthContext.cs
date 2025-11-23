@@ -8,6 +8,9 @@ namespace Shortify.Services
         ClaimsPrincipal? User { get; }
         string? Role { get; }
         string? TenantId { get; }
+
+        // Add this property
+        string? UserId { get; }
     }
 
     // Minimal implementation reading header values via IHttpContextAccessor
@@ -24,5 +27,25 @@ namespace Shortify.Services
         public string? Role => _http.HttpContext?.Request.Headers["x-role"].FirstOrDefault();
 
         public string? TenantId => _http.HttpContext?.Request.Headers["x-tenant"].FirstOrDefault();
+
+        //Name identifier from claims(preferred)
+        public string? UserId
+        {
+            get
+            {
+                var user = _http.HttpContext?.User;
+                if (user == null) return null;
+
+                // Preferred claim types in order: NameIdentifier, sub, name
+                var cid = user.FindFirst(ClaimTypes.NameIdentifier)?.Value
+                         ?? user.FindFirst("sub")?.Value
+                         ?? user.FindFirst("name")?.Value;
+
+                if (!string.IsNullOrEmpty(cid)) return cid;
+
+                // fallback to header if tests use it
+                return _http.HttpContext?.Request.Headers["x-user-id"].FirstOrDefault();
+            }
+        }
     }
 }
