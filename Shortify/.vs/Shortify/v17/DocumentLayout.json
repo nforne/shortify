@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\models\\groupentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\models\\groupentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\tests\\userscontrollerintegrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\tests\\userscontrollerintegrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -35,19 +39,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "GroupEntity.cs",
+              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Models\\GroupEntity.cs",
+              "RelativeDocumentMoniker": "Shortify\\Models\\GroupEntity.cs",
+              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Models\\GroupEntity.cs",
+              "RelativeToolTip": "Shortify\\Models\\GroupEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T11:27:43.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "UsersControllerIntegrationTests.cs",
               "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Tests\\UsersControllerIntegrationTests.cs",
               "RelativeDocumentMoniker": "Shortify\\Tests\\UsersControllerIntegrationTests.cs",
               "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Tests\\UsersControllerIntegrationTests.cs",
               "RelativeToolTip": "Shortify\\Tests\\UsersControllerIntegrationTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-23T11:01:04.319Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Program.cs",
               "RelativeDocumentMoniker": "Shortify\\Program.cs",

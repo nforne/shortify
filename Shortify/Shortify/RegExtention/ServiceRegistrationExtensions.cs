@@ -15,7 +15,11 @@ namespace Shortify.RegExtention
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IAuthContext, HeaderAuthContext>();
-            
+
+            // group service
+            services.AddScoped<IGroupRepository, GroupRepository>();
+            services.AddScoped<IGroupService, GroupService>();
+
             return services;
         }
     }

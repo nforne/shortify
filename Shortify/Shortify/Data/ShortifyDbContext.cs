@@ -10,20 +10,18 @@ namespace Shortify.Data
 
         public DbSet<UserEntity> Users { get; set; } = null!;
 
+        // Add this line
+        public DbSet<GroupEntity> Groups { get; set; } = null!;
+
+        // other DbSets...
+        public DbSet<AttributeEntity> Attributes { get; set; } = null!;
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            //modelBuilder.Entity<UserEntity>(b =>
-            //{
-            //    b.HasKey(u => u.Id);
-            //    b.Property(u => u.TenantId).IsRequired().HasMaxLength(200);
-            //    b.Property(u => u.Email).IsRequired().HasMaxLength(320);
-            //    b.HasIndex(u => new { u.TenantId, u.Email }).IsUnique();
-            //    b.Property(u => u.RolesJson).HasColumnType("nvarchar(max)");
-            //    b.Property(u => u.Status).HasMaxLength(50);
-            //});
-
+            
             modelBuilder.ApplyConfiguration(new UserEntityConfiguration());
+            modelBuilder.ApplyConfiguration(new GroupEntityConfiguration());
         }
     }
 }

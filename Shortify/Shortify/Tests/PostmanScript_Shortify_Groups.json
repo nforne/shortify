@@ -1,0 +1,132 @@
+{
+    "info": {
+        "name": "Shortify - Groups",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Get All Groups",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "x-api-key",
+                        "value": "sk_test_abc123"
+                    }
+                ],
+                "url": {
+                    "raw": "http://mock.Shortify.local/api/groups?tenantId=tenant_abc123&page=1&pageSize=50",
+                    "host": [ "http://mock.Shortify.local" ],
+                    "path": [ "api", "groups" ],
+                    "query": [
+                        {
+                            "key": "tenantId",
+                            "value": "tenant_abc123"
+                        }
+                    ]
+                }
+            },
+            "response": [
+                {
+                    "name": "200 seeded list",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "x-api-key",
+                                "value": "sk_test_abc123"
+                            }
+                        ],
+                        "url": { "raw": "http://mock.Shortify.local/api/groups?tenantId=tenant_abc123&page=1&pageSize=50" }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "body": "[{\"id\":1,\"tenantId\":\"tenant_abc123\",\"name\":\"group_marketing\",\"type\":\"user\",\"metadata\":{},\"status\":\"active\",\"createdAt\":\"2023-01-01T00:00:00Z\"},{\"id\":2,\"tenantId\":\"tenant_abc123\",\"name\":\"group_ops\",\"type\":\"user\",\"metadata\":{},\"status\":\"active\",\"createdAt\":\"2023-01-01T00:00:00Z\"}]"
+                }
+            ]
+        },
+        {
+            "name": "Get Group by Id",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "x-api-key",
+                        "value": "sk_test_abc123"
+                    }
+                ],
+                "url": {
+                    "raw": "http://mock.Shortify.local/api/groups/1",
+                    "host": [ "http://mock.Shortify.local" ],
+                    "path": [ "api", "groups", "1" ]
+                }
+            },
+            "response": [
+                {
+                    "name": "200 group 1",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "x-api-key",
+                                "value": "sk_test_abc123"
+                            }
+                        ],
+                        "url": { "raw": "http://mock.Shortify.local/api/groups/1" }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "body": "{\"id\":1,\"tenantId\":\"tenant_abc123\",\"name\":\"group_marketing\",\"type\":\"user\",\"metadata\":{},\"status\":\"active\",\"createdAt\":\"2023-01-01T00:00:00Z\"}"
+                }
+            ]
+        },
+        {
+            "name": "Create Group",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "x-api-key",
+                        "value": "sk_test_abc123"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{ \"tenantId\":\"tenant_abc123\",\"name\":\"group_new\",\"type\":\"user\",\"metadata\":{} }"
+                },
+                "url": {
+                    "raw": "http://mock.Shortify.local/api/groups",
+                    "host": [ "http://mock.Shortify.local" ],
+                    "path": [ "api", "groups" ]
+                }
+            },
+            "response": [
+                {
+                    "name": "201 created",
+                    "originalRequest": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "x-api-key",
+                                "value": "sk_test_abc123"
+                            }
+                        ],
+                        "url": { "raw": "http://mock.Shortify.local/api/groups" },
+                        "body": "{ \"tenantId\":\"tenant_abc123\",\"name\":\"group_new\",\"type\":\"user\",\"metadata\":{} }"
+                    },
+                    "status": "Created",
+                    "code": 201,
+                    "body": "{\"id\":3,\"tenantId\":\"tenant_abc123\",\"name\":\"group_new\",\"type\":\"user\",\"metadata\":{},\"status\":\"active\",\"createdAt\":\"2023-01-01T00:00:00Z\"}"
+                }
+            ]
+        }
+    ]
+}
