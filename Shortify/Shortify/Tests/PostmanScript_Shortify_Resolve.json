@@ -1,0 +1,328 @@
+{
+    "info": {
+        "name": "Shortify Resolve - Phase 5",
+        "description": "Requests to create attributes and exercise resolve (proxy and raw) including redirect option.",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Auth - Signup (tenant admin)",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"tenantName\": \"Shortify Test Tenant\",\n  \"adminEmail\": \"admin@example.com\",\n  \"adminPassword\": \"P@ssw0rd!\"\n}"
+                },
+                "url": {
+                    "raw": "{{baseUrl}}/api/auth/signup",
+                    "host": [ "{{baseUrl}}" ],
+                    "path": [ "api", "auth", "signup" ]
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Signup returns 201 or 200\", function () {",
+                            "  pm.expect(pm.response.code).to.be.oneOf([200,201]);",
+                            "});",
+                            "",
+                            "// If the response contains a tenantId, store it as tenantId",
+                            "try {",
+                            "  const json = pm.response.json();",
+                            "  if (json && json.tenantId) pm.environment.set('tenantId', json.tenantId);",
+                            "} catch (e) {}"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Auth - Signin (get token)",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"email\": \"admin@example.com\",\n  \"password\": \"P@ssw0rd!\"\n}"
+                },
+                "url": {
+                    "raw": "{{baseUrl}}/api/auth/signin",
+                    "host": [ "{{baseUrl}}" ],
+                    "path": [ "api", "auth", "signin" ]
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Signin returns 200\", function () {",
+                            "  pm.response.to.have.status(200);",
+                            "});",
+                            "try {",
+                            "  const json = pm.response.json();",
+                            "  if (json && json.accessToken) pm.environment.set('authToken', json.accessToken);",
+                            "} catch (e) {}"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Attributes - Create (public resolve proxy)",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer {{authToken}}"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"tenantId\": \"{{tenantId}}\",\n  \"key\": \"campaign_source_created\",\n  \"valueType\": \"string\",\n  \"visibility\": \"public\",\n  \"resolveUrl\": \"https://httpbin.org/json\",\n  \"accountRootUserPk\": {{accountRootUserPk}},\n  \"resolveSignedByDefault\": false,\n  \"resolveCacheTtlSeconds\": 30,\n  \"redirectOnResolve\": false\n}"
+                },
+                "url": {
+                    "raw": "{{baseUrl}}/api/attributes",
+                    "host": [ "{{baseUrl}}" ],
+                    "path": [ "api", "attributes" ]
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Attribute created returns 201 or 200\", function () {",
+                            "  pm.expect(pm.response.code).to.be.oneOf([200,201]);",
+                            "});",
+                            "try {",
+                            "  const json = pm.response.json();",
+                            "  if (json && json.id) pm.environment.set('attributeId', json.id);",
+                            "  if (json && json.shortLink) pm.environment.set('shortLink', json.shortLink);",
+                            "} catch (e) {}"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Attributes - Create (redirect resolve)",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer {{authToken}}"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"tenantId\": \"{{tenantId}}\",\n  \"key\": \"campaign_source_redirect\",\n  \"valueType\": \"string\",\n  \"visibility\": \"public\",\n  \"resolveUrl\": \"https://example.com\",\n  \"accountRootUserPk\": {{accountRootUserPk}},\n  \"resolveSignedByDefault\": false,\n  \"resolveCacheTtlSeconds\": 60,\n  \"redirectOnResolve\": true\n}"
+                },
+                "url": {
+                    "raw": "{{baseUrl}}/api/attributes",
+                    "host": [ "{{baseUrl}}" ],
+                    "path": [ "api", "attributes" ]
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Redirect attribute created\", function () {",
+                            "  pm.expect(pm.response.code).to.be.oneOf([200,201]);",
+                            "});",
+                            "try {",
+                            "  const json = pm.response.json();",
+                            "  if (json && json.id) pm.environment.set('redirectAttributeId', json.id);",
+                            "  if (json && json.shortLink) pm.environment.set('redirectShortLink', json.shortLink);",
+                            "} catch (e) {}"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Resolve - Proxy JSON (return=json)",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "User-Agent",
+                        "value": "Postman-Shortify-Test"
+                    }
+                ],
+                "url": {
+                    "raw": "{{baseUrl}}/stfy/{{accountRootUserPk}}/{{attributeId}}?return=json&xtrace=1",
+                    "host": [ "{{baseUrl}}" ],
+                    "path": [ "stfy", "{{accountRootUserPk}}", "{{attributeId}}" ],
+                    "query": [
+                        {
+                            "key": "return",
+                            "value": "json"
+                        },
+                        {
+                            "key": "xtrace",
+                            "value": "1"
+                        }
+                    ]
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Resolve JSON returns 200\", function () {",
+                            "  pm.response.to.have.status(200);",
+                            "});",
+                            "pm.test(\"Response has payload or base64\", function () {",
+                            "  const json = pm.response.json();",
+                            "  pm.expect(json).to.have.property('payload');",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Resolve - Raw (return=raw)",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Accept",
+                        "value": "*/*"
+                    },
+                    {
+                        "key": "User-Agent",
+                        "value": "Postman-Shortify-Test"
+                    }
+                ],
+                "url": {
+                    "raw": "{{baseUrl}}/stfy/{{accountRootUserPk}}/{{attributeId}}?return=raw&xtrace=1",
+                    "host": [ "{{baseUrl}}" ],
+                    "path": [ "stfy", "{{accountRootUserPk}}", "{{attributeId}}" ],
+                    "query": [
+                        {
+                            "key": "return",
+                            "value": "raw"
+                        },
+                        {
+                            "key": "xtrace",
+                            "value": "1"
+                        }
+                    ]
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Raw resolve returns 200 or 302 for redirect\", function () {",
+                            "  pm.expect(pm.response.code).to.be.oneOf([200,302]);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Resolve - Redirect attribute",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "User-Agent",
+                        "value": "Postman-Shortify-Test"
+                    }
+                ],
+                "url": {
+                    "raw": "{{baseUrl}}/stfy/{{accountRootUserPk}}/{{redirectAttributeId}}",
+                    "host": [ "{{baseUrl}}" ],
+                    "path": [ "stfy", "{{accountRootUserPk}}", "{{redirectAttributeId}}" ]
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Redirect returns 302\", function () {",
+                            "  pm.response.to.have.status(302);",
+                            "});",
+                            "pm.test(\"Location header present\", function () {",
+                            "  pm.expect(pm.response.headers.get('Location')).to.be.ok;",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Resolve - Private attribute without token (expect 403)",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "User-Agent",
+                        "value": "Postman-Shortify-Test"
+                    }
+                ],
+                "url": {
+                    "raw": "{{baseUrl}}/stfy/{{accountRootUserPk}}/9999",
+                    "host": [ "{{baseUrl}}" ],
+                    "path": [ "stfy", "{{accountRootUserPk}}", "9999" ]
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Private without token returns 403 or 404\", function () {",
+                            "  pm.expect(pm.response.code).to.be.oneOf([403,404]);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -5,6 +5,9 @@ using Microsoft.OpenApi;
 using Shortify.RegExtention;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace Shortify
 {
@@ -61,6 +64,38 @@ namespace Shortify
             });
 
 
+            // using Microsoft.AspNetCore.Authentication.JwtBearer;
+            // using Microsoft.IdentityModel.Tokens;
+            // using System.Text;
+
+            var key = builder.Configuration["Jwt:SigningKey"] ?? "dev-placeholder-key-change-me";
+            var issuer = builder.Configuration["Jwt:Issuer"] ?? "shortify";
+            var audience = builder.Configuration["Jwt:Audience"] ?? "shortify-audience";
+
+            builder.Services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultForbidScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+            .AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, options =>
+            {
+                options.RequireHttpsMetadata = false; // set true in prod
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidIssuer = issuer,
+                    ValidateAudience = true,
+                    ValidAudience = audience,
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key)),
+                    ValidateLifetime = true
+                };
+            });
+
+            //app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
+
+
             var app = builder.Build();
 
             // -- Middleware pipeline -----------------------------------------------------
@@ -76,12 +111,14 @@ namespace Shortify
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Shortify - Users API v1"));
             }
-
+                        
             app.UseCors();
             app.UseRouting();
             app.UseHttpsRedirection();
+            app.UseAuthentication();
             app.UseAuthorization();
             app.MapControllers();
+
 
             // -- Ensure DB and Seed ------------------------------------------------------
             using (var scope = app.Services.CreateScope())

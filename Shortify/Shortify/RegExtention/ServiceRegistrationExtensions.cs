@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Shortify.Core.Contracts;
 using Shortify.Repositories;
 using Shortify.Repositories.Interfaces;
 using Shortify.Services;
@@ -35,6 +36,26 @@ namespace Shortify.RegExtention
 
             // Ensure MetricService is registered by its implementation so DI can resolve ShortifyDbContext automatically
             services.AddScoped<IMetricService, MetricService>();
+
+            // HttpClient named client
+            services.AddHttpClient("resolve-fetcher")
+                .ConfigureHttpClient(c =>
+                {
+                    c.Timeout = TimeSpan.FromSeconds(5);
+                    c.DefaultRequestHeaders.UserAgent.ParseAdd("ShortifyResolveFetcher/1.0");
+                });
+
+            // caching (dev)
+            services.AddDistributedMemoryCache(); // replace with AddStackExchangeRedisCache in prod
+
+            // repositories & services
+            services.AddScoped<IResolveEventRepository, ResolveEventRepository>();
+            services.AddScoped<IResolveService, ResolveService>();
+            // Ensure IAttributeRepository already registered (AttributeRepository)
+            services.AddScoped<IKeyStore, ConfigKeyStore>(); // implement or provide no-op
+
+            // Ensure IHttpClientFactory and ILogger<T> are available (they are via AddHttpClient and logging)
+
 
             return services;
         }

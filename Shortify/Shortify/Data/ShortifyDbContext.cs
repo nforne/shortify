@@ -19,6 +19,9 @@ namespace Shortify.Data
         // add this line
         public DbSet<MetricEntity> Metrics { get; set; } = null!;
 
+        // ADD THIS DbSet
+        public DbSet<ResolveEventEntity> ResolveEvents { get; set; } = null!;
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -30,6 +33,7 @@ namespace Shortify.Data
             // add this
             modelBuilder.ApplyConfiguration(new MetricEntityConfiguration());
             modelBuilder.ApplyConfiguration(new AttributeEntityConfiguration());
+            modelBuilder.ApplyConfiguration(new ResolveEventConfiguration());
         }
     }
 }

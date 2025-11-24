@@ -10,6 +10,8 @@ namespace Shortify.Data.Configurations
         {
             builder.ToTable("Groups");
             builder.HasKey(g => g.Id);
+            builder.Property(a => a.Id).ValueGeneratedOnAdd();
+
             builder.Property(g => g.TenantId).IsRequired();
             builder.Property(g => g.Name).IsRequired();
             builder.Property(g => g.Type).IsRequired();

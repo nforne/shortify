@@ -11,6 +11,8 @@ namespace Shortify.Data.Configurations
         {
             builder.ToTable("Users");
             builder.HasKey(x => x.Id);
+            builder.Property(x => x.Id).ValueGeneratedOnAdd();
+
             builder.Property(x => x.TenantId).IsRequired().HasMaxLength(200);
             builder.Property(x => x.Email).IsRequired().HasMaxLength(320);
             builder.HasIndex(x => new { x.TenantId, x.Email }).IsUnique();
