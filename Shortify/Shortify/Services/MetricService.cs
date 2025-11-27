@@ -9,7 +9,9 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Shortify.Data;
 using Shortify.DTOs.MetricDTOs;
+using Shortify.DTOs.UserDTOs;
 using Shortify.Models;
+using Shortify.RegExtention;
 using Shortify.Repositories.Interfaces;
 using Shortify.Services.Interfaces;
 
@@ -29,6 +31,11 @@ namespace Shortify.Services
             _storage = storage;
             _auth = auth;
             _db = db;
+        }
+
+        public UserDto? GetCurrentUserDto()
+        {
+            return _auth.User.GetJsonClaim<UserDto>("user");
         }
 
         // New overload for JSON-first generation
@@ -283,6 +290,12 @@ namespace Shortify.Services
             return list.Select(MapToDto);
         }
 
+        public async Task<IEnumerable<MetricDto>> ListAsync(string? name = null, CancellationToken ct = default)
+        {
+            var list = await _repo.ListAsync(GetCurrentUserDto().TenantId, name, null, null, ct);
+            return list.Select(MapToDto);
+        }
+
         public async Task<MetricDto?> ReplaceAsync(int id, CreateMetricDto dto, CancellationToken ct = default)
         {
             var e = await _repo.GetByIdAsync(id, ct) ?? throw new NotFoundException("Metric not found");
@@ -442,6 +455,8 @@ namespace Shortify.Services
             yield return $"{DateTime.UtcNow:O},resolve,hit,1";
             yield return $"{DateTime.UtcNow:O},operation,exec,42";
         }
+
+       
     }
 
 

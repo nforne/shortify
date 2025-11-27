@@ -11,7 +11,8 @@ namespace Shortify.Services.Interfaces
         Task<MetricDto> GenerateAsync(CreateJsonMetricDto dto, CancellationToken ct = default);
         Task<MetricDto> GenerateAsync(CreateMetricDto dto, CancellationToken ct = default);       
         Task<MetricDto?> GetByIdAsync(int id, CancellationToken ct = default);
-        Task<IEnumerable<MetricDto>> ListAsync(string tenantId, string? name = null, CancellationToken ct = default);
+        //Task<IEnumerable<MetricDto>> ListAsync(string tenantId, string? name = null, CancellationToken ct = default);
+        Task<IEnumerable<MetricDto>> ListAsync(string? name = null, CancellationToken ct = default);
         Task<MetricDto?> ReplaceAsync(int id, CreateMetricDto dto, CancellationToken ct = default);
         Task PatchAsync(int id, object patch, CancellationToken ct = default);
         Task DeleteAsync(int id, CancellationToken ct = default);

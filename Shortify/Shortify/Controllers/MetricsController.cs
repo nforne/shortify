@@ -38,9 +38,9 @@ namespace Shortify.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> List([FromQuery] string tenantId, [FromQuery] string? name = null)
+        public async Task<IActionResult> List([FromQuery] string? name = null)
         {
-            var list = await _svc.ListAsync(tenantId, name);
+            var list = await _svc.ListAsync(name);
             return Ok(list);
         }
 
