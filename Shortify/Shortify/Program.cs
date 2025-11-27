@@ -8,6 +8,7 @@ using Microsoft.OpenApi.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Shortify.ScatchPlus;
 
 namespace Shortify
 {
@@ -56,6 +57,7 @@ namespace Shortify
 
             // Register Users pieces (repository, service, auth context, http context accessor)
             builder.Services.AddShortifyUsers(builder.Configuration);
+            
 
             // Allow minimal CORS for local testing (adjust as needed)
             builder.Services.AddCors(options =>
@@ -64,37 +66,41 @@ namespace Shortify
             });
 
 
-            // using Microsoft.AspNetCore.Authentication.JwtBearer;
-            // using Microsoft.IdentityModel.Tokens;
-            // using System.Text;
+            //// using Microsoft.AspNetCore.Authentication.JwtBearer;
+            //// using Microsoft.IdentityModel.Tokens;
+            //// using System.Text;
 
-            var key = builder.Configuration["Jwt:SigningKey"] ?? "dev-placeholder-key-change-me";
-            var issuer = builder.Configuration["Jwt:Issuer"] ?? "shortify";
-            var audience = builder.Configuration["Jwt:Audience"] ?? "shortify-audience";
+            //var key = builder.Configuration["Jwt:SigningKey"] ?? "dev-placeholder-key-change-me";
+            //var issuer = builder.Configuration["Jwt:Issuer"] ?? "shortify";
+            //var audience = builder.Configuration["Jwt:Audience"] ?? "shortify-audience";
 
-            builder.Services.AddAuthentication(options =>
-            {
-                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-                options.DefaultForbidScheme = JwtBearerDefaults.AuthenticationScheme;
-            })
-            .AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, options =>
-            {
-                options.RequireHttpsMetadata = false; // set true in prod
-                options.TokenValidationParameters = new TokenValidationParameters
-                {
-                    ValidateIssuer = true,
-                    ValidIssuer = issuer,
-                    ValidateAudience = true,
-                    ValidAudience = audience,
-                    ValidateIssuerSigningKey = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key)),
-                    ValidateLifetime = true
-                };
-            });
+            //builder.Services.AddAuthentication(options =>
+            //{
+            //    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+            //    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            //    options.DefaultForbidScheme = JwtBearerDefaults.AuthenticationScheme;
+            //})
+            //.AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, options =>
+            //{
+            //    options.RequireHttpsMetadata = false; // set true in prod
+            //    options.TokenValidationParameters = new TokenValidationParameters
+            //    {
+            //        ValidateIssuer = true,
+            //        ValidIssuer = issuer,
+            //        ValidateAudience = true,
+            //        ValidAudience = audience,
+            //        ValidateIssuerSigningKey = true,
+            //        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key)),
+            //        ValidateLifetime = true
+            //    };
+            //});
 
             //app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
 
+
+            // pass IConfiguration and IHostEnvironment
+            //builder.Services.AddShortifyAuth(builder.Configuration, builder.Environment);
+            builder.Services.AddShortifyAuth(builder.Configuration);
 
             var app = builder.Build();
 
@@ -115,7 +121,8 @@ namespace Shortify
             app.UseCors();
             app.UseRouting();
             app.UseHttpsRedirection();
-            app.UseAuthentication();
+            app.UseAuthentication();                 // MUST run before anything that reads User
+            app.UseMiddleware<RequireBearerMiddleware>(); // optional fast-fail for missing token/claims
             app.UseAuthorization();
             app.MapControllers();
 

@@ -4,7 +4,9 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Shortify.DTOs.AttrDTOs;
+using Shortify.DTOs.UserDTOs;
 using Shortify.Models;
+using Shortify.RegExtention;
 using Shortify.Repositories.Interfaces;
 using Shortify.Services.Interfaces;
 
@@ -19,6 +21,11 @@ namespace Shortify.Services
         {
             _repo = repo;
             _auth = auth;
+        }
+
+        public UserDto? GetCurrentUserDto()
+        {
+            return _auth.User.GetJsonClaim<UserDto>("user");
         }
 
         public async Task<AttributeDto> CreateAsync(CreateAttributeDto dto, CancellationToken ct = default)
@@ -60,6 +67,13 @@ namespace Shortify.Services
         {
             if (_auth.Role != "admin" && _auth.TenantId != tenantId && includePrivate) throw new ForbiddenException("Not allowed to see private attributes");
             var list = await _repo.ListAsync(tenantId, includePrivate, ct);
+            return list.Select(Map);
+        }
+
+        public async Task<IEnumerable<AttributeDto>> ListAsync(bool includePrivate = false, CancellationToken ct = default)
+        {
+            if (_auth.Role != "admin" && _auth.TenantId != GetCurrentUserDto().TenantId && includePrivate) throw new ForbiddenException("Not allowed to see private attributes");
+            var list = await _repo.ListAsync(_auth.TenantId, includePrivate, ct);
             return list.Select(Map);
         }
 

@@ -3,163 +3,60 @@
   "WorkspaceRootPath": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\controllers\\resolvecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\controllers\\resolvecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\regextention\\serviceregistrationextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\regextention\\serviceregistrationextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\data\\configurations\\userentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\data\\configurations\\userentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\data\\configurations\\groupentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\data\\configurations\\groupentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\services\\interfaces\\iresolveservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\services\\interfaces\\iresolveservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\repositories\\resolveeventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\repositories\\resolveeventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\data\\shortifydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\data\\shortifydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Safe2Q\\Downloads\\TokenService\\TokenService\\TokenServiceWebApp\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\tests\\userscontrollerintegrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\tests\\userscontrollerintegrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\tests\\postmanscript_shortify_metrics.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\tests\\postmanscript_shortify_metrics.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\tests\\postmanscript_shortify_groups.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\tests\\postmanscript_shortify_groups.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\tests\\postmanscript_shortify_attributes.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\tests\\postmanscript_shortify_attributes.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\tests\\metricscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\tests\\metricscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\tests\\metricservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\tests\\metricservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\services\\groupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\services\\groupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\controllers\\groupscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\controllers\\groupscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\services\\attributeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\services\\attributeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\data\\configurations\\userentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\data\\configurations\\userentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\controllers\\attributescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\controllers\\attributescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\services\\interfaces\\iattributeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\services\\interfaces\\iattributeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\repositories\\attributerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\repositories\\attributerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\regextention\\serviceregistrationextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\regextention\\serviceregistrationextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\repositories\\metricrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\repositories\\metricrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\repositories\\interfaces\\iattributerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\repositories\\interfaces\\iattributerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\regextention\\authextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\regextention\\authextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\dtos\\attrdtos\\attributedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\dtos\\attrdtos\\attributedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\services\\headerauthcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\services\\headerauthcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\dtos\\attrdtos\\updateattributedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\dtos\\attrdtos\\updateattributedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\services\\requirebearermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\services\\requirebearermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\dtos\\attrdtos\\createattributedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\dtos\\attrdtos\\createattributedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\services\\metricservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\services\\metricservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\services\\interfaces\\imetricservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\services\\interfaces\\imetricservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\repositories\\interfaces\\imetricrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\repositories\\interfaces\\imetricrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\dtos\\metricdtos\\metricdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\dtos\\metricdtos\\metricdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\dtos\\metricdtos\\createmetricdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\dtos\\metricdtos\\createmetricdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\repositories\\grouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\repositories\\grouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\models\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\models\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\models\\groupentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\models\\groupentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\controllers\\groupscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\controllers\\groupscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\repositories\\interfaces\\igrouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\repositories\\interfaces\\igrouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\dtos\\groupdtos\\usergroupmdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\dtos\\groupdtos\\usergroupmdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\services\\interfaces\\igroupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\services\\interfaces\\igroupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\dtos\\groupdtos\\patchgroupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\dtos\\groupdtos\\patchgroupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\dtos\\groupdtos\\groupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\dtos\\groupdtos\\groupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\dtos\\groupdtos\\creategroupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\dtos\\groupdtos\\creategroupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|e:\\col - sem - a\\courses - a\\semester c - 5\\courses - c\\comp 306 - api engineering \u0026 cloud computing\\group project\u002B\\shortifyplus\u002B\\shortify\\shortify\\shortify\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5951AD2D-8A54-4E89-9827-F34E3FC36069}|Shortify\\Shortify.csproj|solutionrelative:shortify\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -169,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -185,520 +82,184 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ResolveController.cs",
-              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Controllers\\ResolveController.cs",
-              "RelativeDocumentMoniker": "Shortify\\Controllers\\ResolveController.cs",
-              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Controllers\\ResolveController.cs",
-              "RelativeToolTip": "Shortify\\Controllers\\ResolveController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T23:14:04.61Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ServiceRegistrationExtensions.cs",
-              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\RegExtention\\ServiceRegistrationExtensions.cs",
-              "RelativeDocumentMoniker": "Shortify\\RegExtention\\ServiceRegistrationExtensions.cs",
-              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\RegExtention\\ServiceRegistrationExtensions.cs",
-              "RelativeToolTip": "Shortify\\RegExtention\\ServiceRegistrationExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T20:02:34.445Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Program.cs",
-              "RelativeDocumentMoniker": "Shortify\\Program.cs",
-              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Program.cs",
-              "RelativeToolTip": "Shortify\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8AAABNAAAAAAAAAA==",
+              "Title": "GroupsController.cs",
+              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Controllers\\GroupsController.cs",
+              "RelativeDocumentMoniker": "Shortify\\Controllers\\GroupsController.cs",
+              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Controllers\\GroupsController.cs",
+              "RelativeToolTip": "Shortify\\Controllers\\GroupsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-22T23:48:00.629Z",
+              "WhenOpened": "2025-11-27T12:33:56.431Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Shortify\\Services\\UserService.cs",
+              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Services\\UserService.cs",
+              "RelativeToolTip": "Shortify\\Services\\UserService.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAWwBcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T07:54:57.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Shortify\\Services\\AuthService.cs",
+              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Services\\AuthService.cs",
+              "RelativeToolTip": "Shortify\\Services\\AuthService.cs",
+              "ViewState": "AgIAAOUAAAAAAAAAAAAYwC4BAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T02:36:11.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AttributeService.cs",
+              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Services\\AttributeService.cs",
+              "RelativeDocumentMoniker": "Shortify\\Services\\AttributeService.cs",
+              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Services\\AttributeService.cs",
+              "RelativeToolTip": "Shortify\\Services\\AttributeService.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T12:23:17.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ServiceRegistrationExtensions.cs",
+              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\RegExtention\\ServiceRegistrationExtensions.cs",
+              "RelativeDocumentMoniker": "Shortify\\RegExtention\\ServiceRegistrationExtensions.cs",
+              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\RegExtention\\ServiceRegistrationExtensions.cs",
+              "RelativeToolTip": "Shortify\\RegExtention\\ServiceRegistrationExtensions.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T16:42:24.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HeaderAuthContext.cs",
+              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Services\\HeaderAuthContext.cs",
+              "RelativeDocumentMoniker": "Shortify\\Services\\HeaderAuthContext.cs",
+              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Services\\HeaderAuthContext.cs",
+              "RelativeToolTip": "Shortify\\Services\\HeaderAuthContext.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAnwBAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T08:36:24.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthExtensions.cs",
+              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\RegExtention\\AuthExtensions.cs",
+              "RelativeDocumentMoniker": "Shortify\\RegExtention\\AuthExtensions.cs",
+              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\RegExtention\\AuthExtensions.cs",
+              "RelativeToolTip": "Shortify\\RegExtention\\AuthExtensions.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAQwG8AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T09:13:49.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "UserEntityConfiguration.cs",
               "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Data\\Configurations\\UserEntityConfiguration.cs",
               "RelativeDocumentMoniker": "Shortify\\Data\\Configurations\\UserEntityConfiguration.cs",
               "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Data\\Configurations\\UserEntityConfiguration.cs",
               "RelativeToolTip": "Shortify\\Data\\Configurations\\UserEntityConfiguration.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAQwIAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-23T11:38:16.027Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GroupEntityConfiguration.cs",
-              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Data\\Configurations\\GroupEntityConfiguration.cs",
-              "RelativeDocumentMoniker": "Shortify\\Data\\Configurations\\GroupEntityConfiguration.cs",
-              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Data\\Configurations\\GroupEntityConfiguration.cs",
-              "RelativeToolTip": "Shortify\\Data\\Configurations\\GroupEntityConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T16:25:39.462Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "Shortify\\Services\\UserService.cs",
-              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Services\\UserService.cs",
-              "RelativeToolTip": "Shortify\\Services\\UserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "AttributesController.cs",
+              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Controllers\\AttributesController.cs",
+              "RelativeDocumentMoniker": "Shortify\\Controllers\\AttributesController.cs",
+              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Controllers\\AttributesController.cs",
+              "RelativeToolTip": "Shortify\\Controllers\\AttributesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T21:32:55.747Z",
+              "WhenOpened": "2025-11-27T12:19:34.207Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IResolveService.cs",
-              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Services\\Interfaces\\IResolveService.cs",
-              "RelativeDocumentMoniker": "Shortify\\Services\\Interfaces\\IResolveService.cs",
-              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Services\\Interfaces\\IResolveService.cs",
-              "RelativeToolTip": "Shortify\\Services\\Interfaces\\IResolveService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T19:07:57.201Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ResolveEventRepository.cs",
-              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Repositories\\ResolveEventRepository.cs",
-              "RelativeDocumentMoniker": "Shortify\\Repositories\\ResolveEventRepository.cs",
-              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Repositories\\ResolveEventRepository.cs",
-              "RelativeToolTip": "Shortify\\Repositories\\ResolveEventRepository.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAYwDEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T20:13:10.134Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ShortifyDbContext.cs",
-              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Data\\ShortifyDbContext.cs",
-              "RelativeDocumentMoniker": "Shortify\\Data\\ShortifyDbContext.cs",
-              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Data\\ShortifyDbContext.cs",
-              "RelativeToolTip": "Shortify\\Data\\ShortifyDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T13:47:15.489Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Safe2Q\\Downloads\\TokenService\\TokenService\\TokenServiceWebApp\\Program.cs",
-              "ToolTip": "C:\\Users\\Safe2Q\\Downloads\\TokenService\\TokenService\\TokenServiceWebApp\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T19:33:21.113Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "MetricsControllerTests.cs",
-              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Tests\\MetricsControllerTests.cs",
-              "RelativeDocumentMoniker": "Shortify\\Tests\\MetricsControllerTests.cs",
-              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Tests\\MetricsControllerTests.cs",
-              "RelativeToolTip": "Shortify\\Tests\\MetricsControllerTests.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAuwBkAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T17:43:06.811Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UsersControllerIntegrationTests.cs",
-              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Tests\\UsersControllerIntegrationTests.cs",
-              "RelativeDocumentMoniker": "Shortify\\Tests\\UsersControllerIntegrationTests.cs",
-              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Tests\\UsersControllerIntegrationTests.cs",
-              "RelativeToolTip": "Shortify\\Tests\\UsersControllerIntegrationTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T11:01:04.319Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "PostmanScript_Shortify_Attributes.json",
-              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Tests\\PostmanScript_Shortify_Attributes.json",
-              "RelativeDocumentMoniker": "Shortify\\Tests\\PostmanScript_Shortify_Attributes.json",
-              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Tests\\PostmanScript_Shortify_Attributes.json",
-              "RelativeToolTip": "Shortify\\Tests\\PostmanScript_Shortify_Attributes.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-23T18:12:42.568Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "PostmanScript_Shortify_Groups.json",
-              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Tests\\PostmanScript_Shortify_Groups.json",
-              "RelativeDocumentMoniker": "Shortify\\Tests\\PostmanScript_Shortify_Groups.json",
-              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Tests\\PostmanScript_Shortify_Groups.json",
-              "RelativeToolTip": "Shortify\\Tests\\PostmanScript_Shortify_Groups.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-23T18:12:44.255Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "PostmanScript_Shortify_Metrics.json",
-              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Tests\\PostmanScript_Shortify_Metrics.json",
-              "RelativeDocumentMoniker": "Shortify\\Tests\\PostmanScript_Shortify_Metrics.json",
-              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Tests\\PostmanScript_Shortify_Metrics.json",
-              "RelativeToolTip": "Shortify\\Tests\\PostmanScript_Shortify_Metrics.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-23T18:12:45.643Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "MetricServiceTests.cs",
-              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Tests\\MetricServiceTests.cs",
-              "RelativeDocumentMoniker": "Shortify\\Tests\\MetricServiceTests.cs",
-              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Tests\\MetricServiceTests.cs",
-              "RelativeToolTip": "Shortify\\Tests\\MetricServiceTests.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAQwCwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T17:39:29.222Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "AttributeService.cs",
-              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Services\\AttributeService.cs",
-              "RelativeDocumentMoniker": "Shortify\\Services\\AttributeService.cs",
-              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Services\\AttributeService.cs",
-              "RelativeToolTip": "Shortify\\Services\\AttributeService.cs",
-              "ViewState": "AgIAAHYAAAAAAAAAAADwv4EAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T17:24:18.528Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 5,
               "Title": "IAttributeService.cs",
               "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Services\\Interfaces\\IAttributeService.cs",
               "RelativeDocumentMoniker": "Shortify\\Services\\Interfaces\\IAttributeService.cs",
               "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Services\\Interfaces\\IAttributeService.cs",
               "RelativeToolTip": "Shortify\\Services\\Interfaces\\IAttributeService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T17:23:20.485Z",
+              "WhenOpened": "2025-11-27T12:22:01.072Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "AttributeRepository.cs",
-              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Repositories\\AttributeRepository.cs",
-              "RelativeDocumentMoniker": "Shortify\\Repositories\\AttributeRepository.cs",
-              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Repositories\\AttributeRepository.cs",
-              "RelativeToolTip": "Shortify\\Repositories\\AttributeRepository.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAIBJwEAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "RequireBearerMiddleware.cs",
+              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Services\\RequireBearerMiddleware.cs",
+              "RelativeDocumentMoniker": "Shortify\\Services\\RequireBearerMiddleware.cs",
+              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Services\\RequireBearerMiddleware.cs",
+              "RelativeToolTip": "Shortify\\Services\\RequireBearerMiddleware.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwFEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T17:18:42.713Z",
+              "WhenOpened": "2025-11-27T11:29:52.07Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "IAttributeRepository.cs",
-              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Repositories\\Interfaces\\IAttributeRepository.cs",
-              "RelativeDocumentMoniker": "Shortify\\Repositories\\Interfaces\\IAttributeRepository.cs",
-              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Repositories\\Interfaces\\IAttributeRepository.cs",
-              "RelativeToolTip": "Shortify\\Repositories\\Interfaces\\IAttributeRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Program.cs",
+              "RelativeDocumentMoniker": "Shortify\\Program.cs",
+              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Program.cs*",
+              "RelativeToolTip": "Shortify\\Program.cs*",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAAwHwAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T17:18:10.888Z",
+              "WhenOpened": "2025-11-22T23:48:00.629Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "GroupService.cs",
-              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Services\\GroupService.cs",
-              "RelativeDocumentMoniker": "Shortify\\Services\\GroupService.cs",
-              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Services\\GroupService.cs",
-              "RelativeToolTip": "Shortify\\Services\\GroupService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Shortify\\Controllers\\UsersController.cs",
+              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Shortify\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAArwBEAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T11:41:03.96Z",
+              "WhenOpened": "2025-11-27T07:45:28.274Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "AttributeDto.cs",
-              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\DTOs\\AttrDTOs\\AttributeDto.cs",
-              "RelativeDocumentMoniker": "Shortify\\DTOs\\AttrDTOs\\AttributeDto.cs",
-              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\DTOs\\AttrDTOs\\AttributeDto.cs",
-              "RelativeToolTip": "Shortify\\DTOs\\AttrDTOs\\AttributeDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Services\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "Shortify\\Services\\Interfaces\\IUserService.cs",
+              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Services\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "Shortify\\Services\\Interfaces\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T17:17:17.434Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "UpdateAttributeDto.cs",
-              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\DTOs\\AttrDTOs\\UpdateAttributeDto.cs",
-              "RelativeDocumentMoniker": "Shortify\\DTOs\\AttrDTOs\\UpdateAttributeDto.cs",
-              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\DTOs\\AttrDTOs\\UpdateAttributeDto.cs",
-              "RelativeToolTip": "Shortify\\DTOs\\AttrDTOs\\UpdateAttributeDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T17:16:29.647Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "CreateAttributeDto.cs",
-              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\DTOs\\AttrDTOs\\CreateAttributeDto.cs",
-              "RelativeDocumentMoniker": "Shortify\\DTOs\\AttrDTOs\\CreateAttributeDto.cs",
-              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\DTOs\\AttrDTOs\\CreateAttributeDto.cs",
-              "RelativeToolTip": "Shortify\\DTOs\\AttrDTOs\\CreateAttributeDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T17:15:47.276Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "MetricRepository.cs",
-              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Repositories\\MetricRepository.cs",
-              "RelativeDocumentMoniker": "Shortify\\Repositories\\MetricRepository.cs",
-              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Repositories\\MetricRepository.cs",
-              "RelativeToolTip": "Shortify\\Repositories\\MetricRepository.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAswDgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T14:58:15.818Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "IMetricService.cs",
-              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Services\\Interfaces\\IMetricService.cs",
-              "RelativeDocumentMoniker": "Shortify\\Services\\Interfaces\\IMetricService.cs",
-              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Services\\Interfaces\\IMetricService.cs",
-              "RelativeToolTip": "Shortify\\Services\\Interfaces\\IMetricService.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA1wBgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T14:53:40.8Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "MetricService.cs",
-              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Services\\MetricService.cs",
-              "RelativeDocumentMoniker": "Shortify\\Services\\MetricService.cs",
-              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Services\\MetricService.cs",
-              "RelativeToolTip": "Shortify\\Services\\MetricService.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAYwAUAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T15:50:15.845Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "IMetricRepository.cs",
-              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Repositories\\Interfaces\\IMetricRepository.cs",
-              "RelativeDocumentMoniker": "Shortify\\Repositories\\Interfaces\\IMetricRepository.cs",
-              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Repositories\\Interfaces\\IMetricRepository.cs",
-              "RelativeToolTip": "Shortify\\Repositories\\Interfaces\\IMetricRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T14:51:40.368Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "MetricDto.cs",
-              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\DTOs\\MetricDTOs\\MetricDto.cs",
-              "RelativeDocumentMoniker": "Shortify\\DTOs\\MetricDTOs\\MetricDto.cs",
-              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\DTOs\\MetricDTOs\\MetricDto.cs",
-              "RelativeToolTip": "Shortify\\DTOs\\MetricDTOs\\MetricDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAIBJwBYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T14:50:39.808Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "CreateMetricDto.cs",
-              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\DTOs\\MetricDTOs\\CreateMetricDto.cs",
-              "RelativeDocumentMoniker": "Shortify\\DTOs\\MetricDTOs\\CreateMetricDto.cs",
-              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\DTOs\\MetricDTOs\\CreateMetricDto.cs",
-              "RelativeToolTip": "Shortify\\DTOs\\MetricDTOs\\CreateMetricDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T14:50:06.375Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "UserEntity.cs",
-              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Models\\UserEntity.cs",
-              "RelativeDocumentMoniker": "Shortify\\Models\\UserEntity.cs",
-              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Models\\UserEntity.cs",
-              "RelativeToolTip": "Shortify\\Models\\UserEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T14:33:53.412Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "GroupRepository.cs",
-              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Repositories\\GroupRepository.cs",
-              "RelativeDocumentMoniker": "Shortify\\Repositories\\GroupRepository.cs",
-              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Repositories\\GroupRepository.cs",
-              "RelativeToolTip": "Shortify\\Repositories\\GroupRepository.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwAYAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T11:39:14.389Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "GroupEntity.cs",
-              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Models\\GroupEntity.cs",
-              "RelativeDocumentMoniker": "Shortify\\Models\\GroupEntity.cs",
-              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Models\\GroupEntity.cs",
-              "RelativeToolTip": "Shortify\\Models\\GroupEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T11:27:43.629Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "UserGroupMData.cs",
-              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\DTOs\\GroupDTOs\\UserGroupMData.cs",
-              "RelativeDocumentMoniker": "Shortify\\DTOs\\GroupDTOs\\UserGroupMData.cs",
-              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\DTOs\\GroupDTOs\\UserGroupMData.cs",
-              "RelativeToolTip": "Shortify\\DTOs\\GroupDTOs\\UserGroupMData.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T13:36:51.946Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "GroupsController.cs",
-              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Controllers\\GroupsController.cs",
-              "RelativeDocumentMoniker": "Shortify\\Controllers\\GroupsController.cs",
-              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Controllers\\GroupsController.cs",
-              "RelativeToolTip": "Shortify\\Controllers\\GroupsController.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAmwAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T11:42:36.066Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "IGroupRepository.cs",
-              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Repositories\\Interfaces\\IGroupRepository.cs",
-              "RelativeDocumentMoniker": "Shortify\\Repositories\\Interfaces\\IGroupRepository.cs",
-              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Repositories\\Interfaces\\IGroupRepository.cs",
-              "RelativeToolTip": "Shortify\\Repositories\\Interfaces\\IGroupRepository.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAYwBoAAABgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T11:33:07.502Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "IGroupService.cs",
-              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Services\\Interfaces\\IGroupService.cs",
-              "RelativeDocumentMoniker": "Shortify\\Services\\Interfaces\\IGroupService.cs",
-              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\Services\\Interfaces\\IGroupService.cs",
-              "RelativeToolTip": "Shortify\\Services\\Interfaces\\IGroupService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T11:36:10.644Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "PatchGroupDto.cs",
-              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\DTOs\\GroupDTOs\\PatchGroupDto.cs",
-              "RelativeDocumentMoniker": "Shortify\\DTOs\\GroupDTOs\\PatchGroupDto.cs",
-              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\DTOs\\GroupDTOs\\PatchGroupDto.cs",
-              "RelativeToolTip": "Shortify\\DTOs\\GroupDTOs\\PatchGroupDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T11:32:01.444Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "GroupDto.cs",
-              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\DTOs\\GroupDTOs\\GroupDto.cs",
-              "RelativeDocumentMoniker": "Shortify\\DTOs\\GroupDTOs\\GroupDto.cs",
-              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\DTOs\\GroupDTOs\\GroupDto.cs",
-              "RelativeToolTip": "Shortify\\DTOs\\GroupDTOs\\GroupDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T11:30:14.538Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "CreateGroupDto.cs",
-              "DocumentMoniker": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\DTOs\\GroupDTOs\\CreateGroupDto.cs",
-              "RelativeDocumentMoniker": "Shortify\\DTOs\\GroupDTOs\\CreateGroupDto.cs",
-              "ToolTip": "E:\\COL - SEM - A\\Courses - A\\Semester C - 5\\Courses - C\\COMP 306 - API Engineering \u0026 Cloud Computing\\Group Project\u002B\\ShortifyPlus\u002B\\shortify\\Shortify\\Shortify\\DTOs\\GroupDTOs\\CreateGroupDto.cs",
-              "RelativeToolTip": "Shortify\\DTOs\\GroupDTOs\\CreateGroupDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T11:29:35.429Z",
+              "WhenOpened": "2025-11-27T07:48:24.529Z",
               "EditorCaption": ""
             }
           ]

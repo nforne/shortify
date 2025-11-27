@@ -5,7 +5,9 @@ using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
 using Shortify.DTOs.GroupDTOs;
+using Shortify.DTOs.UserDTOs;
 using Shortify.Models;
+using Shortify.RegExtention;
 using Shortify.Repositories.Interfaces;
 using Shortify.Services.Interfaces;
 
@@ -22,9 +24,21 @@ namespace Shortify.Services
             _auth = auth;
         }
 
+        public UserDto? GetCurrentUserDto()
+        {
+            return _auth.User.GetJsonClaim<UserDto>("user");
+        }
+
         public async Task<IEnumerable<GroupDto>> GetAllAsync(string tenantId, int page = 1, int pageSize = 50)
         {
             tenantId = EnforceTenantScope(tenantId);
+            var ents = await _repo.GetAllAsync(tenantId, page, pageSize, CancellationToken.None);
+            return ents.Select(MapToDto);
+        }
+
+        public async Task<IEnumerable<GroupDto>> GetAllAsync(int page = 1, int pageSize = 50)
+        {
+            var tenantId = EnforceTenantScope(GetCurrentUserDto().TenantId);
             var ents = await _repo.GetAllAsync(tenantId, page, pageSize, CancellationToken.None);
             return ents.Select(MapToDto);
         }

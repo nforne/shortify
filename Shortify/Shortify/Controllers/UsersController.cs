@@ -13,9 +13,9 @@ namespace Shortify.Controllers
 
         [HttpGet]
         [ProducesResponseType(typeof(IEnumerable<UserDto>), 200)]
-        public async Task<IActionResult> GetAll([FromQuery] string? tenantId, [FromQuery] int page = 1, [FromQuery] int pageSize = 50)
+        public async Task<IActionResult> GetAll([FromQuery] int page = 1, [FromQuery] int pageSize = 50)
         {
-            var res = await _svc.GetAllAsync(tenantId ?? throw new ArgumentException("tenantId required"), page, pageSize);
+            var res = await _svc.GetAllAsync(page, pageSize);
             return Ok(res);
         }
 

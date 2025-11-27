@@ -1,6 +1,7 @@
 ﻿using System.Text.Json;
 using Shortify.DTOs.UserDTOs;
 using Shortify.Models;
+using Shortify.RegExtention;
 using Shortify.Repositories.Interfaces;
 using Shortify.Services.Interfaces;
 
@@ -10,18 +11,37 @@ namespace Shortify.Services
     {
         private readonly IUserRepository _repo;
         private readonly IAuthContext _auth;
-
+      
         public UserService(IUserRepository repo, IAuthContext auth)
         {
             _repo = repo;
-            _auth = auth;
+            _auth = auth;           
         }
 
-        private bool IsAdmin() => string.Equals(_auth.Role, "admin", StringComparison.OrdinalIgnoreCase);
+        private bool IsAdmin() => string.Equals(_auth.Role, "admin", StringComparison.OrdinalIgnoreCase) || GetCurrentUserDto().IsTenant;
         private bool IsAccountRoot() => string.Equals(_auth.Role, "account-root", StringComparison.OrdinalIgnoreCase);
+
+        public UserDto? GetCurrentUserDto()
+        {
+            return _auth.User.GetJsonClaim<UserDto>("user");
+        }
 
         public async Task<IEnumerable<UserDto>> GetAllAsync(string tenantId, int page = 1, int pageSize = 50)
         {
+            
+            if (!IsAdmin())
+            {
+                // non-admins must provide tenant (or use their tenant header)
+                tenantId ??= _auth.TenantId;
+            }
+
+            var ents = await _repo.GetAllAsync(tenantId ?? throw new ArgumentException("tenantId required"), page, pageSize);
+            return ents.Select(e => ToDto(e));
+        }
+
+        public async Task<IEnumerable<UserDto>> GetAllAsync(int page = 1, int pageSize = 50)
+        {
+            string tenantId = GetCurrentUserDto().TenantId;
             if (!IsAdmin())
             {
                 // non-admins must provide tenant (or use their tenant header)
@@ -34,9 +54,10 @@ namespace Shortify.Services
 
         public async Task<UserDto?> GetByIdAsync(int id)
         {
+            string tenantId = GetCurrentUserDto().TenantId;
             var e = await _repo.GetByIdAsync(id);
             if (e == null) return null;
-            if (!IsAdmin() && !string.Equals(e.TenantId, _auth.TenantId, StringComparison.OrdinalIgnoreCase))
+            if (!IsAdmin() && !string.Equals(e.TenantId, tenantId, StringComparison.OrdinalIgnoreCase))
                 throw new UnauthorizedAccessException("tenant mismatch");
             return ToDto(e);
         }
@@ -44,16 +65,24 @@ namespace Shortify.Services
         public async Task<UserDto> CreateAsync(CreateUserDto dto)
         {
             // tenant enforcement: non-admin cannot create across tenants
-            if (!IsAdmin() && !string.Equals(dto.TenantId, _auth.TenantId, StringComparison.OrdinalIgnoreCase))
+            string tenantId = GetCurrentUserDto().TenantId;
+            Console.WriteLine($"this is the attempt ----------> | {dto.TenantId} | {tenantId}"); //-----------------------------------------------------------
+            if (!IsAdmin() && !string.Equals(dto.TenantId, tenantId, StringComparison.OrdinalIgnoreCase))
                 throw new UnauthorizedAccessException("cannot create user for other tenant");
 
             var existing = await _repo.GetByEmailAsync(dto.TenantId, dto.Email);
             if (existing != null) throw new InvalidOperationException("email already exists");
 
+            var (salt, hash) = Pbkdf2PasswordCrypto.CreateSaltAndHash(dto.Password);
+
             var ent = new UserEntity
             {
                 TenantId = dto.TenantId,
                 Email = dto.Email,
+                PasswordHash = hash,
+                PasswordSalt = salt,
+                FirstName = dto.FirstName,
+                LastName = dto.LastName,
                 DisplayName = dto.DisplayName,
                 RolesJson = JsonSerializer.Serialize(dto.Roles),
                 Status = "active",

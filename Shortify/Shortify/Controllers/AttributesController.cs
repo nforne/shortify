@@ -28,9 +28,9 @@ namespace Shortify.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> List([FromQuery] string tenantId, [FromQuery] bool includePrivate = false)
+        public async Task<IActionResult> List([FromQuery]  bool includePrivate = false)
         {
-            var list = await _svc.ListAsync(tenantId, includePrivate);
+            var list = await _svc.ListAsync(includePrivate);
             return Ok(list);
         }
 

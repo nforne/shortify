@@ -33,6 +33,8 @@ namespace Shortify.Tests
             {
                 TenantId = tenantId,
                 Email = "new.user@shortify.test",
+                FirstName = "New User",
+                Password = "password",
                 DisplayName = "New User",
                 Roles = new[] { "user" }
             };
@@ -91,6 +93,8 @@ namespace Shortify.Tests
             {
                 TenantId = tenantId,
                 Email = "exists@shortify.test",
+                FirstName = "New User",
+                Password = "password",
                 DisplayName = "Exists User",
                 Roles = Array.Empty<string>()
             };

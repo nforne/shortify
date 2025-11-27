@@ -7,6 +7,7 @@ namespace Shortify.Services.Interfaces
     public interface IGroupService
     {
         Task<IEnumerable<GroupDto>> GetAllAsync(string tenantId, int page = 1, int pageSize = 50);
+        Task<IEnumerable<GroupDto>> GetAllAsync(int page = 1, int pageSize = 50);
         Task<GroupDto?> GetByIdAsync(int id);
         Task<GroupDto> CreateAsync(CreateGroupDto dto);
         Task<GroupDto?> ReplaceAsync(int id, GroupDto dto);

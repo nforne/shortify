@@ -22,7 +22,7 @@ namespace Shortify.Tests
         private readonly Mock<ISnapshotStorage> _storage = new();
         private readonly Mock<IAuthContext> _auth = new();
 
-        private MetricService CreateService(string dbName = null)
+        private MetricService CreateService(string? dbName = null)
         {
             // ensure unique in-memory DB per test when needed
             var options = new DbContextOptionsBuilder<ShortifyDbContext>()

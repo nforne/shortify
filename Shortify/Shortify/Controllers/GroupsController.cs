@@ -17,8 +17,8 @@ namespace Shortify.Controllers
 
         [HttpGet]
         [ProducesResponseType(typeof(IEnumerable<GroupDto>), 200)]
-        public async Task<IActionResult> GetAll([FromQuery] string tenantId, [FromQuery] int page = 1, [FromQuery] int pageSize = 50)
-            => Ok(await _svc.GetAllAsync(tenantId, page, pageSize));
+        public async Task<IActionResult> GetAll([FromQuery] int page = 1, [FromQuery] int pageSize = 50)
+            => Ok(await _svc.GetAllAsync(page, pageSize));
 
         [HttpGet("{id:int}")]
         [ProducesResponseType(typeof(GroupDto), 200)]

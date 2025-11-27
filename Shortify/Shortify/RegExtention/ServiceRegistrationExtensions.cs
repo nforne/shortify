@@ -13,16 +13,15 @@ namespace Shortify.RegExtention
         public static IServiceCollection AddShortifyUsers(this IServiceCollection services, IConfiguration config)
         {
             services.AddHttpContextAccessor();
+            // Register auth context
+            services.AddScoped<IAuthContext, HeaderAuthContext>();
 
             // IMPORTANT: ShortifyDbContext must be registered in Program.cs (AddDbContext<ShortifyDbContext>(...))
             // Register repositories first
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IAttributeRepository, AttributeRepository>();
             services.AddScoped<IGroupRepository, GroupRepository>();
-            services.AddScoped<IMetricRepository, MetricRepository>();
-
-            // Register auth context
-            services.AddScoped<IAuthContext, HeaderAuthContext>();
+            services.AddScoped<IMetricRepository, MetricRepository>();            
 
             // Register snapshot storage (dev default). Replace with S3SnapshotStorage when ready.
             var snapshotsFolder = config.GetValue<string>("Snapshots:LocalFolder") ?? "./snapshots";
